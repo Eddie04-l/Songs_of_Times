@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #ececec;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    color: #03947a;
+}
+::-webkit-scrollbar-track{
+    color: #03947a;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.grid1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.flex{
+    display: flex;
+}
+.flex h3{
+    font-size: 30px;
+}
+.flex img{
+    width: 100px;
+    height: 100px;
+}
+.daytrit img{
+    width: 400px;
+}
+.acc_det h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: left;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #03947a;
+}
+.acc_det p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Media Query */
+@media screen and (max-width:1024px){
+    .grid-container{
+        display: block;
+        padding-top: 0;
+    }
+    .grid1 img{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-around;
+    }
+    .flex h3{
+        font-size: 30px;
+    }
+    .flex img{
+        width: 100px;
+        height: 100px;
+    }
+    .acc_det h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 80px;
+        text-align: left;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #03947a;
+    }
+    .acc_det p{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+@media screen and (max-width:600px){
+    .grid-container{
+        display: block;
+        padding-top: 0;
+    }
+    .grid1 img{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    .flex{
+        display: flex;
+    }
+    .flex h3{
+        font-size: 20px;
+    }
+    .flex img{
+        width: 100px;
+        height: 100px;
+    }
+    .acc_det h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        text-align: left;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #03947a;
+    }
+    .acc_det p{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+@media screen and (max-width:480px){
+    .grid-container{
+        display: block;
+        padding-top: 0;
+    }
+    .grid1 img{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    .flex{
+        display: flex;
+    }
+    .flex h3{
+        font-size: 20px;
+    }
+    .flex img{
+        width: 100px;
+        height: 100px;
+    }
+    .acc_det h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        text-align: left;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #03947a;
+    }
+    .acc_det p{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+@media screen and (max-width:400px){
+    .grid-container{
+        display: block;
+        padding-top: 0;
+    }
+    .grid1 img{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    .flex{
+        display: flex;
+    }
+    .flex h3{
+        font-size: 20px;
+    }
+    .flex img{
+        width: 100px;
+        height: 100px;
+    }
+    .acc_det h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        text-align: left;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #03947a;
+    }
+    .acc_det p{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+@media screen and (max-width:350px){
+    .grid-container{
+        display: block;
+        padding-top: 0;
+    }
+    .grid1 img{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-around;
+    }
+    .flex h3{
+        font-size: 15px;
+    }
+    .flex img{
+        width: 80px;
+        height: 80px;
+    }
+    .acc_det h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        text-align: left;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #03947a;
+    }
+    .acc_det h2{
+        font-size: 18px;
+    }
+    .acc_det p{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+/* body{
+    background: lightblue;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 55% 40%;
+    justify-content: space-around;
+}
+.container{
+    height: auto;
+    /* margin: 10px; 
+    padding:10px;
+    width: 40%;
+    margin-left: 30%;
+    text-align: center;
+    position: relative;
+}
+.paystack button{
+    width: 40%;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-left: -5%;
+}
+.grid1 img{
+    border-radius: 20px;
+}
+.grid2{
+    height: 433px;
+}
+button{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.card-body{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left: 10%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex h3 img{
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width:480px){
+    body{
+        background: lightblue;
+    }
+    .container{
+        height: auto;
+        padding:10px;
+        width: 80%;
+        text-align: center;
+        position: relative;
+        
+    }
+    .paystack button{
+        width: 60%;
+        background-color: #008000;
+        color: #fff;
+        border: none;
+        outline: none;
+    }
+    button{
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .card-body{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex h3 img{
+        width: 100px;
+        height: 100px;
+    }
+    .acc_det p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: left;
+    }   
+} */
